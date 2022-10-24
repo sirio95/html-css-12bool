@@ -4,3 +4,29 @@
     padding:0;
     box-sizing: border-box;
 }
+.body{
+    max-width:1170px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* caratteristiche estetiche frame */
+[class*="col-xs-"]{
+    border: 1px solid #fff;
+    background-color: blue;
+}
+
+[class*="nested"]{
+    background-color: chartreuse;
+    border: 1px solid blue;
+    color:#fff;
+}
+.row.nested{
+    margin: 2px;
+}
+.container{
+    margin:10px auto;
+}
+.row{
+    min-height:25px;
+}
