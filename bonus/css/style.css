@@ -158,3 +158,16 @@ i{
         background-color: red;
     }
 }
+
+/* soluzioni */
+.solutions{
+    padding:15px auto;
+}
+.solutions h3{
+    color:red;
+    font-size:20px;
+}
+
+input[type="submit"]{
+    margin: 15px auto;
+}
