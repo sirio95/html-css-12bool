@@ -45,6 +45,11 @@ sub:hover{
     color:red;
     text-decoration: underline;
 }
+.red{
+    color:crimson;
+    font-size:16px;
+    padding: 10px 0;
+}
 section{
     margin-top: 30px;
 }
@@ -65,7 +70,7 @@ i{
 .move1:active{
     position:absolute;
     animation-name: first-move;
-    animation-duration: 5s;
+    animation-duration: 3s;
 
 }
 
@@ -75,11 +80,81 @@ i{
         right: 690px;
     }
     50%{
-        bottom: 250px;
+        bottom: 220px;
         right: 690px;
     }
     100%{
-        bottom: 300px;
+        bottom: 250px;
         right: 690px;
+    }
+}
+
+.move3:active{
+    position:absolute;
+    animation-name: third-move;
+    animation-duration: 3s;
+}
+
+@keyframes third-move{
+    0%{
+        bottom:190px;
+        right: 640px;
+    }
+    50%{
+        bottom: 250px;
+        right: 640px;
+    }
+    100%{
+        bottom: 300px;
+        right: 640px;
+    }
+}
+
+.move2:active{
+    position:absolute;
+    animation-name: second-move;
+    animation-duration: 3s;
+}
+
+@keyframes second-move{
+    0%{
+        right:750px;
+        top: 180px;
+    }
+    50%{
+        right:750px;
+        top: 250px;
+    }
+    100%{
+        right:750px;
+        top: 290px;
+    }
+}
+.move4:active{
+    position:absolute;
+    animation-name: fourth-move;
+    animation-duration: 6s;
+}
+
+@keyframes fourth-move{
+    0%{
+        right: 800px;
+        top:130px;
+        background-color: transparent;
+    }
+    45%{
+        right:580px;
+        top:350px;
+        background-color: transparent;
+    }
+    90%{
+        right: 750px;
+        top: 540px;
+    }
+    
+    100%{
+        right: 750px;
+        top: 540px;
+        background-color: red;
     }
 }
