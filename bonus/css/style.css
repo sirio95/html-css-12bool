@@ -1,0 +1,85 @@
+/* Regole  generali */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* caratteristiche frame */
+.container{
+    cursor: pointer;
+    margin-left:0;
+    margin-top:20px;
+    position:relative;
+}
+
+.col-xs-1{
+    height:60px;
+    max-width:60px;
+    border:1px solid #000;
+    background-color: #d18b46;
+}
+.white{
+    background-color: #fff;
+    color:#000;
+    text-align: center;
+    line-height:300%;
+    font-size:20px;
+}
+.light{
+    background-color: #fece9e;
+}
+
+/* Caratteristiche contenuto */
+main{
+    margin-left:10%;
+}
+sub{
+    cursor: pointer;
+}
+sub:hover{
+    color:red;
+    text-decoration: underline;
+}
+section{
+    margin-top: 30px;
+}
+
+section h2{
+    font-size:20px;
+    color:orangered;
+}
+i{
+    font-size: 40px;
+    text-align:center;
+    padding:10px;
+}
+.whited i{
+    color:#fff;
+}
+
+.move1:active{
+    position:absolute;
+    animation-name: first-move;
+    animation-duration: 5s;
+
+}
+
+@keyframes first-move{
+    0%{
+        bottom:190px;
+        right: 690px;
+    }
+    50%{
+        bottom: 250px;
+        right: 690px;
+    }
+    100%{
+        bottom: 300px;
+        right: 690px;
+    }
+}
